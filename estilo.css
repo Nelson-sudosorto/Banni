@@ -313,3 +313,69 @@ footer a:hover {
   font-weight: 700;
   font-size: 28px;
 }
+
+/* Estilo general del formulario */
+form#checkoutForm {
+  max-width: 500px;
+  margin: 0 auto;
+  background-color: #f8f8f8;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Encabezados */
+form#checkoutForm h3 {
+  border-bottom: 2px solid #e74c3c; /* color rojo */
+  padding-bottom: 5px;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  font-family: 'Arial Black', Arial, sans-serif;
+  color: #e74c3c;
+}
+
+/* Labels */
+form#checkoutForm label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+  color: #333;
+  font-size: 14px;
+}
+
+/* Inputs y selects */
+form#checkoutForm input[type="text"],
+form#checkoutForm input[type="datetime-local"],
+form#checkoutForm select {
+  width: 100%;
+  padding: 8px 10px;
+  margin-bottom: 15px;
+  border: 1.5px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: border-color 0.3s ease;
+}
+
+/* Cambio de borde al enfocar */
+form#checkoutForm input[type="text"]:focus,
+form#checkoutForm input[type="datetime-local"]:focus,
+form#checkoutForm select:focus {
+  border-color: #e74c3c;
+  outline: none;
+}
+
+/* Botón finalizar compra */
+form#checkoutForm button[type="submit"] {
+  background-color: #e74c3c;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form#checkoutForm button[type="submit"]:hover {
+  background-color: #c0392b;
+}
